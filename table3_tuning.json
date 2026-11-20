@@ -1,0 +1,897 @@
+{
+  "median_eval_ari": {
+    "iris": {
+      "k-means": 0.553,
+      "FCM": 0.625,
+      "Rough k-means": 0.614,
+      "RFCM": 0.571,
+      "RMCM2": 0.59,
+      "NosRMCM": 0.59,
+      "RMCM2(NN)": 0.623,
+      "NosRMCM(NN)": 0.59
+    },
+    "wine": {
+      "k-means": 0.899,
+      "FCM": 0.869,
+      "Rough k-means": 0.869,
+      "RFCM": 0.899,
+      "RMCM2": 0.899,
+      "NosRMCM": 0.869,
+      "RMCM2(NN)": 0.835,
+      "NosRMCM(NN)": 0.865
+    },
+    "breast_cancer": {
+      "k-means": 0.677,
+      "FCM": 0.702,
+      "Rough k-means": 0.7,
+      "RFCM": 0.7,
+      "RMCM2": 0.688,
+      "NosRMCM": 0.677,
+      "RMCM2(NN)": 0.678,
+      "NosRMCM(NN)": 0.677
+    },
+    "digits": {
+      "k-means": 0.41,
+      "FCM": 0.532,
+      "Rough k-means": 0.467,
+      "RFCM": 0.467,
+      "RMCM2": 0.461,
+      "NosRMCM": 0.516,
+      "RMCM2(NN)": 0.558,
+      "NosRMCM(NN)": 0.549
+    },
+    "letter": {
+      "k-means": 0.164,
+      "FCM": 0.155,
+      "Rough k-means": 0.154,
+      "RFCM": 0.161,
+      "RMCM2": 0.162,
+      "NosRMCM": 0.149,
+      "RMCM2(NN)": 0.171,
+      "NosRMCM(NN)": 0.157
+    },
+    "waveform-5000": {
+      "k-means": 0.256,
+      "FCM": 0.345,
+      "Rough k-means": 0.256,
+      "RFCM": 0.252,
+      "RMCM2": 0.251,
+      "NosRMCM": 0.312,
+      "RMCM2(NN)": 0.252,
+      "NosRMCM(NN)": 0.267
+    },
+    "texture": {
+      "k-means": 0.479,
+      "FCM": 0.456,
+      "Rough k-means": 0.489,
+      "RFCM": 0.49,
+      "RMCM2": 0.468,
+      "NosRMCM": 0.509,
+      "RMCM2(NN)": 0.493,
+      "NosRMCM(NN)": 0.554
+    },
+    "libras_move": {
+      "k-means": 0.285,
+      "FCM": 0.328,
+      "Rough k-means": 0.314,
+      "RFCM": 0.325,
+      "RMCM2": 0.311,
+      "NosRMCM": 0.343,
+      "RMCM2(NN)": 0.367,
+      "NosRMCM(NN)": 0.33
+    },
+    "gas-drift": {
+      "k-means": 0.081,
+      "FCM": 0.09,
+      "Rough k-means": 0.083,
+      "RFCM": 0.096,
+      "RMCM2": 0.083,
+      "NosRMCM": 0.083,
+      "RMCM2(NN)": 0.126,
+      "NosRMCM(NN)": 0.118
+    },
+    "mfeat-factors": {
+      "k-means": 0.68,
+      "FCM": 0.777,
+      "Rough k-means": 0.674,
+      "RFCM": 0.666,
+      "RMCM2": 0.66,
+      "NosRMCM": 0.646,
+      "RMCM2(NN)": 0.692,
+      "NosRMCM(NN)": 0.629
+    },
+    "usps": {
+      "k-means": 0.46,
+      "FCM": 0.541,
+      "Rough k-means": 0.521,
+      "RFCM": 0.459,
+      "RMCM2": 0.488,
+      "NosRMCM": 0.446,
+      "RMCM2(NN)": 0.594,
+      "NosRMCM(NN)": 0.535
+    },
+    "Fashion-MNIST": {
+      "k-means": 0.36,
+      "FCM": 0.336,
+      "Rough k-means": 0.361,
+      "RFCM": 0.324,
+      "RMCM2": 0.374,
+      "NosRMCM": 0.345,
+      "RMCM2(NN)": 0.366,
+      "NosRMCM(NN)": 0.375
+    }
+  },
+  "mean_rank": {
+    "k-means": 5.625,
+    "FCM": 3.5833333333333335,
+    "Rough k-means": 4.708333333333333,
+    "RFCM": 4.958333333333333,
+    "RMCM2": 5.166666666666667,
+    "NosRMCM": 5.166666666666667,
+    "RMCM2(NN)": 2.875,
+    "NosRMCM(NN)": 3.9166666666666665
+  },
+  "mean_rank_groups": {
+    "knn5": {
+      "k-means": 3.75,
+      "FCM": 2.4583333333333335,
+      "Rough k-means": 3.3333333333333335,
+      "RFCM": 3.4166666666666665,
+      "RMCM2(NN)": 2.0416666666666665
+    },
+    "delta5": {
+      "k-means": 3.5416666666666665,
+      "FCM": 2.2083333333333335,
+      "Rough k-means": 2.875,
+      "RFCM": 3.0,
+      "RMCM2": 3.375
+    },
+    "knn5_nos": {
+      "k-means": 3.625,
+      "FCM": 2.375,
+      "Rough k-means": 3.25,
+      "RFCM": 3.2916666666666665,
+      "NosRMCM(NN)": 2.4583333333333335
+    },
+    "delta5_nos": {
+      "k-means": 3.4583333333333335,
+      "FCM": 2.1666666666666665,
+      "Rough k-means": 3.0,
+      "RFCM": 3.125,
+      "NosRMCM": 3.25
+    }
+  },
+  "wins": {
+    "RMCM2 vs k-means": {
+      "wins": 7,
+      "ties": 1,
+      "losses": 4,
+      "median_diff": 0.006750547675287995,
+      "median_diff_of_rounded": 0.00649999999999995
+    },
+    "RMCM2 vs FCM": {
+      "wins": 4,
+      "ties": 0,
+      "losses": 8,
+      "median_diff": -0.015356001362283572,
+      "median_diff_of_rounded": -0.015500000000000014
+    },
+    "RMCM2 vs Rough k-means": {
+      "wins": 3,
+      "ties": 1,
+      "losses": 8,
+      "median_diff": -0.005197356606613385,
+      "median_diff_of_rounded": -0.005500000000000005
+    },
+    "RMCM2 vs RFCM": {
+      "wins": 4,
+      "ties": 1,
+      "losses": 7,
+      "median_diff": -0.0036885899413787726,
+      "median_diff_of_rounded": -0.003500000000000003
+    },
+    "RMCM2 vs NosRMCM": {
+      "wins": 6,
+      "ties": 2,
+      "losses": 4,
+      "median_diff": 0.006058510336935115,
+      "median_diff_of_rounded": 0.005499999999999949
+    },
+    "RMCM2 vs RMCM2(NN)": {
+      "wins": 3,
+      "ties": 0,
+      "losses": 9,
+      "median_diff": -0.028733393732870094,
+      "median_diff_of_rounded": -0.028499999999999942
+    },
+    "RMCM2 vs NosRMCM(NN)": {
+      "wins": 4,
+      "ties": 1,
+      "losses": 7,
+      "median_diff": -0.008584308282504838,
+      "median_diff_of_rounded": -0.008500000000000008
+    },
+    "NosRMCM vs k-means": {
+      "wins": 6,
+      "ties": 1,
+      "losses": 5,
+      "median_diff": 0.00069203733835288,
+      "median_diff_of_rounded": 0.0010000000000000009
+    },
+    "NosRMCM vs FCM": {
+      "wins": 3,
+      "ties": 1,
+      "losses": 8,
+      "median_diff": -0.011908705905939565,
+      "median_diff_of_rounded": -0.011500000000000003
+    },
+    "NosRMCM vs Rough k-means": {
+      "wins": 4,
+      "ties": 2,
+      "losses": 6,
+      "median_diff": -0.002740888509280087,
+      "median_diff_of_rounded": -0.0025000000000000022
+    },
+    "NosRMCM vs RFCM": {
+      "wins": 6,
+      "ties": 0,
+      "losses": 6,
+      "median_diff": 0.0028932722358181867,
+      "median_diff_of_rounded": 0.0030000000000000027
+    },
+    "NosRMCM vs RMCM2": {
+      "wins": 4,
+      "ties": 2,
+      "losses": 6,
+      "median_diff": -0.006058510336935115,
+      "median_diff_of_rounded": -0.005499999999999949
+    },
+    "NosRMCM vs RMCM2(NN)": {
+      "wins": 3,
+      "ties": 0,
+      "losses": 9,
+      "median_diff": -0.023042011150675057,
+      "median_diff_of_rounded": -0.022999999999999993
+    },
+    "NosRMCM vs NosRMCM(NN)": {
+      "wins": 4,
+      "ties": 2,
+      "losses": 6,
+      "median_diff": -0.004583201032996309,
+      "median_diff_of_rounded": -0.0040000000000000036
+    },
+    "RMCM2(NN) vs k-means": {
+      "wins": 10,
+      "ties": 0,
+      "losses": 2,
+      "median_diff": 0.013264840319441307,
+      "median_diff_of_rounded": 0.012999999999999956
+    },
+    "RMCM2(NN) vs FCM": {
+      "wins": 7,
+      "ties": 0,
+      "losses": 5,
+      "median_diff": 0.020726309353751596,
+      "median_diff_of_rounded": 0.02100000000000002
+    },
+    "RMCM2(NN) vs Rough k-means": {
+      "wins": 9,
+      "ties": 0,
+      "losses": 3,
+      "median_diff": 0.012590798386630922,
+      "median_diff_of_rounded": 0.013000000000000012
+    },
+    "RMCM2(NN) vs RFCM": {
+      "wins": 9,
+      "ties": 1,
+      "losses": 2,
+      "median_diff": 0.027757766267232697,
+      "median_diff_of_rounded": 0.027999999999999955
+    },
+    "RMCM2(NN) vs RMCM2": {
+      "wins": 9,
+      "ties": 0,
+      "losses": 3,
+      "median_diff": 0.028733393732870094,
+      "median_diff_of_rounded": 0.028499999999999942
+    },
+    "RMCM2(NN) vs NosRMCM": {
+      "wins": 9,
+      "ties": 0,
+      "losses": 3,
+      "median_diff": 0.023042011150675057,
+      "median_diff_of_rounded": 0.022999999999999993
+    },
+    "RMCM2(NN) vs NosRMCM(NN)": {
+      "wins": 8,
+      "ties": 0,
+      "losses": 4,
+      "median_diff": 0.008357130104173986,
+      "median_diff_of_rounded": 0.008500000000000008
+    },
+    "NosRMCM(NN) vs k-means": {
+      "wins": 8,
+      "ties": 1,
+      "losses": 3,
+      "median_diff": 0.025883481512535333,
+      "median_diff_of_rounded": 0.025999999999999968
+    },
+    "NosRMCM(NN) vs FCM": {
+      "wins": 6,
+      "ties": 0,
+      "losses": 6,
+      "median_diff": -0.0009710083286135485,
+      "median_diff_of_rounded": -0.0010000000000000009
+    },
+    "NosRMCM(NN) vs Rough k-means": {
+      "wins": 8,
+      "ties": 0,
+      "losses": 4,
+      "median_diff": 0.012488013561524569,
+      "median_diff_of_rounded": 0.012500000000000011
+    },
+    "NosRMCM(NN) vs RFCM": {
+      "wins": 8,
+      "ties": 0,
+      "losses": 4,
+      "median_diff": 0.0164403342132127,
+      "median_diff_of_rounded": 0.017000000000000015
+    },
+    "NosRMCM(NN) vs RMCM2": {
+      "wins": 7,
+      "ties": 1,
+      "losses": 4,
+      "median_diff": 0.008584308282504838,
+      "median_diff_of_rounded": 0.008500000000000008
+    },
+    "NosRMCM(NN) vs NosRMCM": {
+      "wins": 6,
+      "ties": 2,
+      "losses": 4,
+      "median_diff": 0.004583201032996309,
+      "median_diff_of_rounded": 0.0040000000000000036
+    },
+    "NosRMCM(NN) vs RMCM2(NN)": {
+      "wins": 4,
+      "ties": 0,
+      "losses": 8,
+      "median_diff": -0.008357130104173986,
+      "median_diff_of_rounded": -0.008500000000000008
+    }
+  },
+  "selection_optimism": {
+    "k-means": -0.0017684693403246232,
+    "FCM": 0.005788579442274326,
+    "Rough k-means": 0.008462612636625504,
+    "RFCM": 0.021048387846760695,
+    "RMCM2": 0.017869749524811934,
+    "NosRMCM": 0.021305568476397398,
+    "RMCM2(NN)": 0.0200223108306956,
+    "NosRMCM(NN)": 0.023077758651084815
+  },
+  "nosrmcm_K_fixed": {
+    "iris": 75,
+    "wine": 89,
+    "breast_cancer": 100,
+    "digits": 100,
+    "letter": 100,
+    "waveform-5000": 100,
+    "texture": 100,
+    "libras_move": 100,
+    "gas-drift": 100,
+    "mfeat-factors": 100,
+    "usps": 100,
+    "Fashion-MNIST": 100
+  },
+  "rmcm2_q": {
+    "iris": [
+      0.2537,
+      0.2292,
+      0.3244
+    ],
+    "wine": [
+      0.0185,
+      0.0066,
+      0.0524
+    ],
+    "breast_cancer": [
+      0.0185,
+      0.044,
+      0.0131
+    ],
+    "digits": [
+      0.0662,
+      0.0182,
+      0.0022
+    ],
+    "letter": [
+      0.0035,
+      0.0026,
+      0.0025
+    ],
+    "waveform-5000": [
+      0.0282,
+      0.0491,
+      0.0279
+    ],
+    "texture": [
+      0.0132,
+      0.0882,
+      0.0115
+    ],
+    "libras_move": [
+      0.0839,
+      0.0798,
+      0.0811
+    ],
+    "gas-drift": [
+      0.0693,
+      0.0025,
+      0.103
+    ],
+    "mfeat-factors": [
+      0.0082,
+      0.0032,
+      0.0279
+    ],
+    "usps": [
+      0.0278,
+      0.0225,
+      0.0314
+    ],
+    "Fashion-MNIST": [
+      0.0119,
+      0.0026,
+      0.0537
+    ]
+  },
+  "nosrmcm_q": {
+    "iris": [
+      0.2674,
+      0.2217,
+      0.2977
+    ],
+    "wine": [
+      0.0814,
+      0.0035,
+      0.003
+    ],
+    "breast_cancer": [
+      0.1739,
+      0.0035,
+      0.216
+    ],
+    "digits": [
+      0.0089,
+      0.0136,
+      0.0306
+    ],
+    "letter": [
+      0.02,
+      0.0029,
+      0.002
+    ],
+    "waveform-5000": [
+      0.2286,
+      0.209,
+      0.1986
+    ],
+    "texture": [
+      0.006,
+      0.0136,
+      0.0421
+    ],
+    "libras_move": [
+      0.0317,
+      0.0403,
+      0.003
+    ],
+    "gas-drift": [
+      0.0084,
+      0.0196,
+      0.003
+    ],
+    "mfeat-factors": [
+      0.0582,
+      0.0112,
+      0.0353
+    ],
+    "usps": [
+      0.0257,
+      0.0235,
+      0.0198
+    ],
+    "Fashion-MNIST": [
+      0.0021,
+      0.0376,
+      0.0812
+    ]
+  },
+  "info": {
+    "iris": {
+      "n": 150,
+      "d": 4,
+      "C": 3
+    },
+    "wine": {
+      "n": 178,
+      "d": 13,
+      "C": 3
+    },
+    "breast_cancer": {
+      "n": 569,
+      "d": 30,
+      "C": 2
+    },
+    "digits": {
+      "n": 1000,
+      "d": 61,
+      "C": 10
+    },
+    "letter": {
+      "n": 1000,
+      "d": 16,
+      "C": 26
+    },
+    "waveform-5000": {
+      "n": 1000,
+      "d": 40,
+      "C": 3
+    },
+    "texture": {
+      "n": 1001,
+      "d": 40,
+      "C": 11
+    },
+    "libras_move": {
+      "n": 360,
+      "d": 90,
+      "C": 15
+    },
+    "gas-drift": {
+      "n": 601,
+      "d": 128,
+      "C": 6
+    },
+    "mfeat-factors": {
+      "n": 600,
+      "d": 216,
+      "C": 10
+    },
+    "usps": {
+      "n": 600,
+      "d": 256,
+      "C": 10
+    },
+    "Fashion-MNIST": {
+      "n": 600,
+      "d": 784,
+      "C": 10
+    }
+  },
+  "nosrmcm_minus_rmcm2": {
+    "iris": 0.0,
+    "wine": -0.03,
+    "breast_cancer": -0.011,
+    "digits": 0.055,
+    "letter": -0.013,
+    "waveform-5000": 0.061,
+    "texture": 0.041,
+    "libras_move": 0.032,
+    "gas-drift": 0.0,
+    "mfeat-factors": -0.014,
+    "usps": -0.042,
+    "Fashion-MNIST": -0.029
+  },
+  "nosrmcm_minus_rmcm2_range": [
+    -0.042,
+    0.061
+  ],
+  "rmcm2nn_k_over_n": {
+    "iris": [
+      0.32,
+      0.0133,
+      0.5
+    ],
+    "wine": [
+      0.0337,
+      0.0112,
+      0.0112
+    ],
+    "breast_cancer": [
+      0.1652,
+      0.1054,
+      0.007
+    ],
+    "digits": [
+      0.038,
+      0.029,
+      0.085
+    ],
+    "letter": [
+      0.003,
+      0.016,
+      0.024
+    ],
+    "waveform-5000": [
+      0.065,
+      0.065,
+      0.003
+    ],
+    "texture": [
+      0.029,
+      0.021,
+      0.003
+    ],
+    "libras_move": [
+      0.0472,
+      0.0639,
+      0.0361
+    ],
+    "gas-drift": [
+      0.1165,
+      0.0832,
+      0.1498
+    ],
+    "mfeat-factors": [
+      0.0033,
+      0.045,
+      0.0683
+    ],
+    "usps": [
+      0.0517,
+      0.0217,
+      0.0267
+    ],
+    "Fashion-MNIST": [
+      0.0083,
+      0.0033,
+      0.09
+    ]
+  },
+  "rmcm2nn_k": {
+    "iris": [
+      48,
+      2,
+      75
+    ],
+    "wine": [
+      6,
+      2,
+      2
+    ],
+    "breast_cancer": [
+      94,
+      60,
+      4
+    ],
+    "digits": [
+      38,
+      29,
+      85
+    ],
+    "letter": [
+      3,
+      16,
+      24
+    ],
+    "waveform-5000": [
+      65,
+      65,
+      3
+    ],
+    "texture": [
+      29,
+      21,
+      3
+    ],
+    "libras_move": [
+      17,
+      23,
+      13
+    ],
+    "gas-drift": [
+      70,
+      50,
+      90
+    ],
+    "mfeat-factors": [
+      2,
+      27,
+      41
+    ],
+    "usps": [
+      31,
+      13,
+      16
+    ],
+    "Fashion-MNIST": [
+      5,
+      2,
+      54
+    ]
+  },
+  "rmcm2nn_k_le10": {
+    "count": 11,
+    "runs": 36
+  },
+  "best_existing": {
+    "iris": 0.625,
+    "wine": 0.899,
+    "breast_cancer": 0.702,
+    "digits": 0.532,
+    "letter": 0.164,
+    "waveform-5000": 0.345,
+    "texture": 0.49,
+    "libras_move": 0.328,
+    "gas-drift": 0.096,
+    "mfeat-factors": 0.777,
+    "usps": 0.541,
+    "Fashion-MNIST": 0.361
+  },
+  "above_best_existing": {
+    "RMCM2": {
+      "count": 1,
+      "datasets": [
+        "Fashion-MNIST"
+      ]
+    },
+    "NosRMCM": {
+      "count": 2,
+      "datasets": [
+        "texture",
+        "libras_move"
+      ]
+    },
+    "RMCM2(NN)": {
+      "count": 7,
+      "datasets": [
+        "digits",
+        "letter",
+        "texture",
+        "libras_move",
+        "gas-drift",
+        "usps",
+        "Fashion-MNIST"
+      ]
+    },
+    "NosRMCM(NN)": {
+      "count": 5,
+      "datasets": [
+        "digits",
+        "texture",
+        "libras_move",
+        "gas-drift",
+        "Fashion-MNIST"
+      ]
+    }
+  },
+  "ties_with_best_existing": {
+    "RMCM2": [
+      "wine"
+    ],
+    "NosRMCM": [],
+    "RMCM2(NN)": [],
+    "NosRMCM(NN)": []
+  },
+  "datasets_without_bold": [
+    "iris",
+    "wine",
+    "breast_cancer",
+    "waveform-5000",
+    "mfeat-factors"
+  ],
+  "best_family": {
+    "iris": 0.623,
+    "wine": 0.899,
+    "breast_cancer": 0.688,
+    "digits": 0.558,
+    "letter": 0.171,
+    "waveform-5000": 0.312,
+    "texture": 0.554,
+    "libras_move": 0.367,
+    "gas-drift": 0.126,
+    "mfeat-factors": 0.692,
+    "usps": 0.594,
+    "Fashion-MNIST": 0.375
+  },
+  "existing_best_above_family": {
+    "iris": [
+      "FCM"
+    ],
+    "breast_cancer": [
+      "FCM"
+    ],
+    "waveform-5000": [
+      "FCM"
+    ],
+    "mfeat-factors": [
+      "FCM"
+    ]
+  },
+  "rows_best_existing_equals_best_family": [
+    "wine"
+  ],
+  "nosrmcm_nn_minus_rmcm2_nn": {
+    "iris": -0.033,
+    "wine": 0.03,
+    "breast_cancer": -0.001,
+    "digits": -0.009,
+    "letter": -0.014,
+    "waveform-5000": 0.015,
+    "texture": 0.061,
+    "libras_move": -0.037,
+    "gas-drift": -0.008,
+    "mfeat-factors": -0.063,
+    "usps": -0.059,
+    "Fashion-MNIST": 0.009
+  },
+  "nosrmcm_nn_minus_rmcm2_nn_range": [
+    -0.063,
+    0.061
+  ],
+  "nosrmcm_nn_k": {
+    "iris": [
+      28,
+      4,
+      48
+    ],
+    "wine": [
+      3,
+      2,
+      2
+    ],
+    "breast_cancer": [
+      19,
+      26,
+      172
+    ],
+    "digits": [
+      4,
+      99,
+      50
+    ],
+    "letter": [
+      33,
+      48,
+      29
+    ],
+    "waveform-5000": [
+      495,
+      497,
+      431
+    ],
+    "texture": [
+      35,
+      16,
+      14
+    ],
+    "libras_move": [
+      23,
+      5,
+      11
+    ],
+    "gas-drift": [
+      100,
+      26,
+      41
+    ],
+    "mfeat-factors": [
+      3,
+      46,
+      2
+    ],
+    "usps": [
+      41,
+      42,
+      40
+    ],
+    "Fashion-MNIST": [
+      14,
+      78,
+      32
+    ]
+  },
+  "reference_median_eval_ari": {},
+  "reference_best_overall_count": {}
+}

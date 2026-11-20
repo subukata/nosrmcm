@@ -1,0 +1,191 @@
+{
+  "run": "20261120-104018",
+  "n_max": 245057,
+  "rmcm2_largest_n": 30000,
+  "rmcm2_time_at_largest_n": 11.80351299996255,
+  "rmcm2_relation_bytes_at_largest_n": 1082281468,
+  "rmcm2_relation_share_of_time_at_largest_n": 0.8133131212757705,
+  "rmcm2_skipped": [
+    {
+      "n": 100000,
+      "estimated_relation_bytes": 11990737604.0
+    },
+    {
+      "n": 245057,
+      "estimated_relation_bytes": 96568623928.176
+    }
+  ],
+  "nos": {
+    "K100_n1000": {
+      "time_total": 0.007479100022464991,
+      "time_nodes": 0.006237199995666742,
+      "time_relation": 5.0099974032491446e-05,
+      "time_iterations": 0.0002940999693237245,
+      "time_output": 0.0006408999906852841,
+      "relation_bytes": 80000,
+      "peak_bytes": 2540264,
+      "iterations": 5
+    },
+    "K500_n1000": {
+      "time_total": 0.043136199994478375,
+      "time_nodes": 0.028678700036834925,
+      "time_relation": 0.002928100002463907,
+      "time_iterations": 0.00231440004426986,
+      "time_output": 0.009125799988396466,
+      "relation_bytes": 2000000,
+      "peak_bytes": 14350795,
+      "iterations": 6
+    },
+    "K100_n3000": {
+      "time_total": 0.02164350001839921,
+      "time_nodes": 0.01608279999345541,
+      "time_relation": 5.119998240843415e-05,
+      "time_iterations": 0.00016930000856518745,
+      "time_output": 0.005488700000569224,
+      "relation_bytes": 80000,
+      "peak_bytes": 7405851,
+      "iterations": 1
+    },
+    "K500_n3000": {
+      "time_total": 0.11120919999666512,
+      "time_nodes": 0.07706929999403656,
+      "time_relation": 0.0028921000193804502,
+      "time_iterations": 0.002507900004275143,
+      "time_output": 0.028773900005035102,
+      "relation_bytes": 2000000,
+      "peak_bytes": 38421277,
+      "iterations": 7
+    },
+    "K100_n10000": {
+      "time_total": 0.07143990002805367,
+      "time_nodes": 0.052169100032188,
+      "time_relation": 5.6800025049597025e-05,
+      "time_iterations": 0.0003040999872609973,
+      "time_output": 0.018746299960184842,
+      "relation_bytes": 80000,
+      "peak_bytes": 13544898,
+      "iterations": 5
+    },
+    "K500_n10000": {
+      "time_total": 0.3613027000101283,
+      "time_nodes": 0.2629890000098385,
+      "time_relation": 0.0029275999986566603,
+      "time_iterations": 0.0018152999691665173,
+      "time_output": 0.09152570000151172,
+      "relation_bytes": 2000000,
+      "peak_bytes": 68187531,
+      "iterations": 4
+    },
+    "K100_n30000": {
+      "time_total": 0.2839238999877125,
+      "time_nodes": 0.22917529998812824,
+      "time_relation": 9.029998909682035e-05,
+      "time_iterations": 0.00023250002413988113,
+      "time_output": 0.055156600021291524,
+      "relation_bytes": 80000,
+      "peak_bytes": 27397855,
+      "iterations": 2
+    },
+    "K500_n30000": {
+      "time_total": 1.6457418999634683,
+      "time_nodes": 1.360396199976094,
+      "time_relation": 0.0029661000007763505,
+      "time_iterations": 0.0022947000106796622,
+      "time_output": 0.28749230003450066,
+      "relation_bytes": 2000000,
+      "peak_bytes": 125270390,
+      "iterations": 6
+    },
+    "K100_n100000": {
+      "time_total": 1.2366175999632105,
+      "time_nodes": 1.0407513999962248,
+      "time_relation": 0.00013749999925494194,
+      "time_iterations": 0.00031049997778609395,
+      "time_output": 0.19844300003023818,
+      "relation_bytes": 80000,
+      "peak_bytes": 91201497,
+      "iterations": 4
+    },
+    "K500_n100000": {
+      "time_total": 6.539676700020209,
+      "time_nodes": 5.595026099996176,
+      "time_relation": 0.0030457000248134136,
+      "time_iterations": 0.002021400025114417,
+      "time_output": 0.9409111000131816,
+      "relation_bytes": 2000000,
+      "peak_bytes": 413182929,
+      "iterations": 5
+    },
+    "K100_n245057": {
+      "time_total": 3.1766734999837354,
+      "time_nodes": 2.7125956999952905,
+      "time_relation": 0.00011149997590109706,
+      "time_iterations": 0.0003360999980941415,
+      "time_output": 0.4591534999781288,
+      "relation_bytes": 80000,
+      "peak_bytes": 223378121,
+      "iterations": 4
+    },
+    "K500_n245057": {
+      "time_total": 18.986949899990577,
+      "time_nodes": 16.663002000015695,
+      "time_relation": 0.0029214000096544623,
+      "time_iterations": 0.002161199983675033,
+      "time_output": 2.3186736999778077,
+      "relation_bytes": 2000000,
+      "peak_bytes": 1009223027,
+      "iterations": 5
+    }
+  },
+  "speedup_at_rmcm2_largest_n": {
+    "K100": 41.57280524983411,
+    "K500": 7.172153179198124
+  },
+  "nos_time_ratio_nmax_over_rmcm2_largest_n": {
+    "K100": 11.188468107549994,
+    "K500": 11.537015555362627
+  },
+  "nos_nodes_share_at_nmax": {
+    "K100": 0.8539107654624182,
+    "K500": 0.8776028844961541
+  },
+  "nos_output_share_at_nmax": {
+    "K100": 0.14453909096433099,
+    "K500": 0.12211933523767071
+  },
+  "nos_peak_mb_at_nmax": {
+    "K100": 223.378121,
+    "K500": 1009.223027
+  },
+  "nos_relation_mb": {
+    "K100": 0.08,
+    "K500": 2.0
+  },
+  "nos_time_range_at_nmax": {
+    "K100": [
+      3.1592304999940097,
+      3.185939699993469
+    ],
+    "K500": [
+      18.89044869999634,
+      19.071360700007062
+    ]
+  },
+  "rmcm2_time_range_at_largest_n": [
+    11.795885599975009,
+    11.86258660000749
+  ],
+  "n_ratio_nmax_over_rmcm2_largest_n": 8.168566666666667,
+  "repeats": 3,
+  "rmcm2_relation_gb_at_largest_n": 1.082281468,
+  "rmcm2_skipped_estimated_gb": [
+    11.990737604,
+    96.568623928176
+  ],
+  "rmcm2_peak_gb_at_largest_n": 6.162381068,
+  "nos_peak_gb_at_nmax": {
+    "K100": 0.223378121,
+    "K500": 1.009223027
+  },
+  "rmcm2_peak_mb_at_largest_n": 6162.381068
+}

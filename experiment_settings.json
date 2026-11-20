@@ -1,0 +1,276 @@
+{
+  "fig2_fidelity": {
+    "datasets": [
+      "iris",
+      "wine",
+      "breast_cancer",
+      "digits"
+    ],
+    "quantiles": [
+      0.01,
+      0.02,
+      0.03,
+      0.05,
+      0.07,
+      0.1,
+      0.15,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.7
+    ],
+    "node_counts": [
+      10,
+      20,
+      50,
+      100,
+      200,
+      500,
+      1000,
+      "n"
+    ],
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "restarts": 10,
+    "init": "mass-weighted k-means++ on nodes; best of R by objective"
+  },
+  "fig3_radius": {
+    "dataset": "pendigits",
+    "ns": [
+      1000,
+      2000,
+      5000
+    ],
+    "quantiles": [
+      0.03,
+      0.1,
+      0.3
+    ],
+    "node_counts": [
+      10,
+      20,
+      50,
+      100,
+      200,
+      500,
+      1000
+    ],
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "restarts": 10,
+    "radius": "q-quantile of 10^6 random pair distances of the whole standardized data set (same for all n)",
+    "subsets": "trial s uses the first n points of permutation s of the whole data set (nested in n)"
+  },
+  "fig3_knn": {
+    "dataset": "pendigits",
+    "ns": [
+      1000,
+      2000,
+      5000
+    ],
+    "quantiles": [
+      0.03,
+      0.1,
+      0.3
+    ],
+    "node_counts": [
+      10,
+      20,
+      50,
+      100,
+      200,
+      500,
+      1000
+    ],
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "restarts": 10,
+    "radius": "q-quantile of 10^6 random pair distances of the whole standardized data set (same for all n)",
+    "subsets": "trial s uses the first n points of permutation s of the whole data set (nested in n)",
+    "relation": "knn",
+    "knn": {
+      "k": "max(2, ceil(q n))",
+      "point_ties": "fixed random order of the whole data set (seed 20261025)",
+      "node_relation": "cumulative mass >= k, own node first, node ties by a fixed random order (seed 424242)",
+      "point_output": "nosrmcm.point_output_knn",
+      "rrms_over_delta": "r_rms / median over the points of the distance to the k-th nearest point"
+    }
+  },
+  "fig4_scaling": {
+    "dataset": "skin-segmentation",
+    "ns": [
+      1000,
+      3000,
+      10000,
+      30000,
+      100000,
+      245057
+    ],
+    "q": 0.1,
+    "Ks": [
+      100,
+      500
+    ],
+    "seed": 0,
+    "max_relation_gb": 6.0,
+    "repeats": 3,
+    "radius": "q-quantile of 10^6 random pair distances of the whole standardized data set (same for all n)",
+    "subsets": "the first n points of one random permutation (nested in n)",
+    "timing": "Single thread (OMP/OpenBLAS/MKL threads = 1) on one computer (Intel Core i7-14700, Windows 11). Each condition was timed in three separate processes, each pinned to one logical processor of a performance core with Windows power throttling disabled and with the default floating-point mode (subnormal numbers not flushed); each process timed three runs after a warm-up. Reported: the median over the processes of the per-process medians; the minimum and maximum over the processes. One initialization per method and condition.",
+    "subset_permutation_seed": 10000,
+    "processes": 3,
+    "run": "20261120-104018",
+    "peak_memory": "tracemalloc peak of one more run per condition in a separate process"
+  },
+  "fig4_memberships": {
+    "part": "skin",
+    "dataset": "skin-segmentation",
+    "ns": [
+      1000,
+      3000,
+      10000,
+      30000
+    ],
+    "q": 0.1,
+    "Ks": [
+      100,
+      500
+    ],
+    "trials": [
+      0,
+      1,
+      2
+    ],
+    "restarts": 10,
+    "subsets": "first n points of permutation 10000 (as the timing run)",
+    "radius": "q-quantile of 10^6 random pair distances of the whole data set (as the timing run)"
+  },
+  "fig5_stream": {
+    "dataset": "pendigits",
+    "n": 5000,
+    "subset_seed": 10000,
+    "orders": [
+      0,
+      1,
+      2
+    ],
+    "Ks": [
+      100,
+      500
+    ],
+    "q": 0.1,
+    "restarts": 10,
+    "batch_seeds": [
+      0,
+      1,
+      2
+    ],
+    "windows": 10,
+    "online_init": "Algorithm 1 on the first K nodes, best of R mass-weighted k-means++ initializations (seed = order)",
+    "subset": "the first n points of permutation subset_seed of the whole data set",
+    "radius": "q-quantile of the distances of all pairs of the subset",
+    "timing": "Time per input: Single thread (OMP/OpenBLAS/MKL threads = 1) on one computer (Intel Core i7-14700, Windows 11). Each stream was timed in three separate processes, each pinned to one logical processor of a performance core with Windows power throttling disabled and with the default floating-point mode (subnormal numbers not flushed); each process timed three runs after a warm-up. Reported: the median over the processes of the per-process medians; the minimum and maximum over the processes.",
+    "processes": 3,
+    "run": "20261120-104834"
+  },
+  "stream_confirmation": {
+    "part": "online",
+    "grid": {
+      "datasets": [
+        "artificial-characters",
+        "first-order-theorem-proving"
+      ],
+      "n_cal": 1000,
+      "n_stream": 5000,
+      "q": 0.1,
+      "Ks": [
+        100,
+        500
+      ],
+      "orders": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "batch_seeds": [
+        0,
+        1,
+        2
+      ],
+      "restarts": 10,
+      "windows": 10
+    }
+  },
+  "table1_batch_and_table2_ablation": {
+    "part": "batch",
+    "grid": {
+      "datasets": [
+        "artificial-characters",
+        "first-order-theorem-proving",
+        "GesturePhaseSegmentationProcessed",
+        "MiceProtein"
+      ],
+      "quantiles": [
+        0.03,
+        0.1,
+        0.3
+      ],
+      "node_counts": [
+        10,
+        20,
+        50,
+        100,
+        200,
+        500,
+        1000
+      ],
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "restarts": 10
+    }
+  },
+  "table3_tuning": {
+    "datasets": [
+      "iris",
+      "wine",
+      "breast_cancer",
+      "digits",
+      "letter",
+      "waveform-5000",
+      "texture",
+      "mfeat-factors",
+      "libras_move",
+      "usps",
+      "gas-drift",
+      "Fashion-MNIST"
+    ],
+    "n_max": "1000 (600 if d > 100)",
+    "trials_per_method": 20,
+    "n_startup": 8,
+    "restarts": 5,
+    "repetitions": [
+      0,
+      1,
+      2
+    ],
+    "selection": "max ARI on the selection half (TPE objective -ARI)",
+    "search_spaces": "See the hyperparameter ranges in the manuscript subsection Comparison Under Hyperparameter Tuning."
+  }
+}
